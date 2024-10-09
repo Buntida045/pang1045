@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pic/back3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fffcf8;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.378);
+    box-shadow: 0 4px 8px rgb(212, 198, 3);
+    border-radius: 10px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile .image {
+    margin-bottom: 30px;
+}
+
+.profile .image img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.profile h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #bfe210;
+}
+
+.profile .details p {
+    margin: 30px 10;
+    color: #bfe210;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+}
+
+.assignments, .project, .contact {
+    background-color: #0000006a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(212, 198, 3);
+}
+
+.assignments h2, .project h2, .contact h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: #e210a7;
+}
+
+.assignment-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; 
+}
+
+.assignment-buttons .assignment {
+    display: block;
+    width: 100%; 
+    background-color: #1111d8; 
+    color: #fff; 
+    text-align: center;
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.assignment-buttons .assignment:hover {
+    background-color: #c20a9a; 
+    transform: scale(1.05); 
+}
+
+
+.project {
+    margin: 20px 0; 
+}
+
+.project-images {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.project-frame {
+    flex: 0 1 300px; 
+    text-align: center; 
+}
+
+.project-frame img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
+}
+
+a {
+    text-decoration: none; 
+}
+
+.contact a {
+    text-decoration: none; 
+    color: #e70ea6; 
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #1111d8; 
+    text-decoration: none; 
+}
+
+.referent {
+    text-align: center; 
+}
+
+.referent a {
+    color: #e70ea6;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.referent a:hover {
+    color: #1111d8; 
+}
+
+.contact .social-button {
+    display: block;
+    width: 100%;
+    background-color: #1111d8; 
+    color: #fff;
+    border: none;
+    padding: 15px 20px; 
+    border-radius: 15px; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    font-size: 18px; 
+    margin-bottom: 15px; 
+}
+
+.contact .social-button:hover {
+    background-color: #da10e4;
+    transform: scale(1.05); 
+}
+
+.referent p {
+    color: #bfe210; 
+    font-size: 20px; 
+    margin-bottom: 8px; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.referent a {
+    color: #e70ea6; 
+    font-size: 15px; 
+   text-align: center;
+    transition: color 0.3s ease;
+}
+
+.referent a:hover {
+    color: #1111d8; 
+}
+
+.referent button {
+    background-color: #90ab06;
+    color: rgb(212, 239, 14);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.referent button:hover {
+    background-color: #e8e80a;
+}
+
+.button-back {
+    background-color: rgba(6, 29, 204, 0.9);
+    border: none;
+    color: #000000;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-back:hover {
+    background-color: rgba(233, 14, 244, 0.9);
+    color: #FFFFFF;
+  }
+
+
+
+.assignment-row {
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0 4px 8px rgb(212, 198, 3);
+    border-radius: 10px; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.9); 
+    width: 1100px; 
+}
+
+.assignment-row .image {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-right: 20px; 
+}
+
+.assignment-row .image img {
+    width: 300px; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.assignment-row .text {
+    font-size: 1.2rem;
+    color: #e2df07; 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+

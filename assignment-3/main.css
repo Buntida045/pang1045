@@ -1,0 +1,131 @@
+/* This is a comment.
+    It can span many lines in a CSS file. */
+body {
+    font-family: 'Arial', sans-serif; /* ฟอนต์ */
+    background-image: url('pic/back3.jpg'); /* ใส่ลิ้งค์รูปที่ต้องการ */
+    background-size: cover; /* ปรับขนาดให้เต็มพื้นที่ */
+    background-position: center; /* จัดรูปให้อยู่กึ่งกลาง */
+    color: #f6f6f6; /* สีตัวอักษร */
+    margin: 0; /* กำจัดขอบ */
+    padding: 20px; /* เพิ่มการเว้นระยะ */
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* เรียงแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
+}
+h1 {
+    background-color: rgb(240, 243, 82);
+    color: rgb(248, 17, 17);
+    font-size: 30pt;
+}
+
+.parent {
+    text-align: left;
+}
+
+#cinnamonlogo {
+    width: 50%;
+}
+
+.center_page {
+    text-align: center;
+}
+
+#cinnamonlogo {
+    width: 30%;
+}
+
+
+h2 {
+    background-color: rgb(240, 243, 82);
+    color: rgb(5, 30, 143);
+    font-size: 30pt;
+}
+
+ul {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+
+}
+
+#cinnamonpic {
+    width: 30%;
+}
+
+.center_page {
+    text-align: center;
+
+}
+
+div {
+    text-align: center;
+}
+
+.left_page {
+    text-align: left;
+}
+
+
+h3 {
+    background-color: rgb(219, 216, 11);
+    color: rgb(126, 19, 126);
+    font-size: 30pt;
+}
+
+
+ul {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+
+}
+
+#cinnamon-pic {
+    width: 30%;
+}
+
+.center_page {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.left_page {
+    text-align: left;
+}
+
+.center_page {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.left_page {
+    text-align: left;
+}
+
+img{
+    width:80%;
+}
+
+.parent{
+    text-align: left;
+}
+
+.div_display{
+    border: 3px solid rgb(143, 18, 10);
+    width: 200px; 
+}
+
+#one{
+    position: static;
+    top: 20px;
+    left: 20px; 
+}
+.flex_contener{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

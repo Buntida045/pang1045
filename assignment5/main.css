@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif; /* ฟอนต์ */
+    background-image: url('pic/back3.jpg'); /* ใส่ลิ้งค์รูปที่ต้องการ */
+    background-size: cover; /* ปรับขนาดให้เต็มพื้นที่ */
+    background-position: center; /* จัดรูปให้อยู่กึ่งกลาง */
+    color: #ee0d0d; /* สีตัวอักษร */
+    margin: 0; /* กำจัดขอบ */
+    padding: 20px; /* เพิ่มการเว้นระยะ */
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* เรียงแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
+}
+
+div {
+    background-color: #080808cf;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    width: 95%;
+    box-shadow: 0px 8px 15px rgb(205, 227, 12);
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #e7f30a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+/* Section Breaks */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Message Area */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #449d44;
+}
+
+/* Message Display */
+#topic, #reply1, #reply2 {
+    background-color: #e1f5fe;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

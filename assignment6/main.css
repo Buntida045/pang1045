@@ -1,0 +1,134 @@
+/* รีเซ็ตสไตล์เริ่มต้นบางอย่าง */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* ฟอนต์ */
+    background-image: url('pic/back3.jpg'); /* ใส่ลิ้งค์รูปที่ต้องการ */
+    background-size: cover; /* ปรับขนาดให้เต็มพื้นที่ */
+    background-position: center; /* จัดรูปให้อยู่กึ่งกลาง */
+    color: #f6f6f6; /* สีตัวอักษร */
+    margin: 0; /* กำจัดขอบ */
+    padding: 20px; /* เพิ่มการเว้นระยะ */
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* เรียงแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
+}
+
+/* จัดให้อยู่กลางหน้า */
+form {
+    max-width: 400px; /* ความกว้างสูงสุด */
+    margin: 50px auto; /* จัดให้อยู่กลาง */
+    padding: 20px; /* ระยะขอบภายใน */
+    border-radius: 8px; /* มุมโค้ง */
+    background-color: #f085b072; /* สีพื้นหลังของฟอร์ม */
+    box-shadow: 0 4px 20px rgb(221, 7, 7); /* เงา */
+}
+
+/* สไตล์ของ fieldset และ legend */
+fieldset {
+    border: none; /* ลบกรอบเริ่มต้น */
+    padding: 0; /* ลบระยะขอบ */
+}
+
+legend {
+    font-size: 1.5em; /* ขนาดข้อความ */
+    margin-bottom: 15px; /* ระยะห่างด้านล่าง */
+    color: #e2d70a; /* สีของ legend */
+}
+
+/* สไตล์ของ input และปุ่ม */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="submit"],
+input[type="reset"],
+input[type="radio"] {
+    width: 100%; /* ความกว้าง 100% */
+    padding: 10px; /* ระยะขอบภายใน */
+    margin: 10px 0; /* ระยะห่าง */
+    border: 1px solid #ccc; /* กรอบ */
+    border-radius: 4px; /* มุมโค้ง */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #4A90E2; /* สีกรอบเมื่อมีการโฟกัส */
+    box-shadow: 0 0 5px rgba(47, 208, 65, 0.5); /* เงาเมื่อโฟกัส */
+    outline: none; /* ลบเส้นขอบเริ่มต้น */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #063264; /* สีพื้นหลังของปุ่ม */
+    color: rgb(231, 231, 16); /* สีข้อความ */
+    border: none; /* ลบกรอบ */
+    cursor: pointer; /* เปลี่ยนรูปชี้เมื่อชี้ไปที่ปุ่ม */
+    font-weight: bold; /* ขีดเน้นข้อความ */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #357ABD; /* สีเข้มขึ้นเมื่อชี้ไปที่ปุ่ม */
+}
+
+/* สไตล์ข้อความแสดงข้อผิดพลาด */
+#errormsg {
+    color: red; /* สีข้อความแสดงข้อผิดพลาด */
+    font-size: 0.9em; /* ขนาดข้อความ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+/* สไตล์ปุ่มเลือก (radio) */
+input[type="radio"] {
+    width: auto; /* ความกว้างอัตโนมัติ */
+    margin: 0 5px 0 0; /* ระยะห่าง */
+}
+
+/* ระยะห่างเพิ่มเติมสำหรับ label */
+label {
+    margin-right: 10px; /* ระยะห่างด้านขวา */
+}
+
+/* จัดหน้าให้เหมาะสมกับอุปกรณ์ต่างๆ */
+@media only screen and (max-width: 768px) { /* สำหรับแท็บเล็ต */
+    form {
+        display: grid; /* ใช้ grid layout */
+        grid-template-columns: 1fr 1fr; /* สร้างคอลัมน์ 2 คอลัมน์ */
+        gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        grid-column: span 1; /* ปรับให้ปุ่มอยู่ในคอลัมน์ */
+    }
+
+    /* ปรับข้อความแสดงข้อผิดพลาด */
+    #errormsg {
+        grid-column: span 2; /* ทำให้ข้อความแสดงข้อผิดพลาดขยายเต็มความกว้าง */
+    }
+}
+
+@media only screen and (max-width: 480px) { /* สำหรับโทรศัพท์มือถือ */
+    form {
+        display: grid; /* ใช้ grid layout */
+        grid-template-columns: 1fr; /* สร้างคอลัมน์ 1 คอลัมน์ */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        grid-column: span 1; /* ปรับให้ปุ่มอยู่ในคอลัมน์ */
+    }
+
+    /* ปรับข้อความแสดงข้อผิดพลาด */
+    #errormsg {
+        grid-column: span 1; /* ทำให้ข้อความแสดงข้อผิดพลาดขยายเต็มความกว้าง */
+    }
+}
